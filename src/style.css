@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'homo-SC-black', sans-serif;
+}
+
+@font-face {
+  font-family: 'homo-SC-black';
+  src: url('https://monika.jkloli.net/font/homo/HarmonyOS_Sans_SC/HarmonyOS_Sans_SC_Black.ttf');
+}
