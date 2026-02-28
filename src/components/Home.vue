@@ -2,6 +2,7 @@
 import { LinkCard } from "./cards";
 import ScaleContainer from "./ScaleContainer.vue";
 import ImageCard from "./cards/ImageCard.vue";
+import MusicCard from "./cards/MusicCard.vue";
 // 设计对比用背景图，可与设计稿对照
 import testBg from "../assets/test.png";
 import tgIcon from "../assets/icons/Telegram.svg";
@@ -12,6 +13,7 @@ import zocsrd from "../assets/cards/zocsrd.svg";
 import recycle from "../assets/cards/recycle.svg";
 import blog from "../assets/cards/blog.svg";
 import violet from "../assets/custom/violet.webp";
+
 </script>
 
 <template>
@@ -31,6 +33,7 @@ import violet from "../assets/custom/violet.webp";
 					<img :src="blog" alt="blog" />
 					<div class="blog-circle"></div>
 				</a>
+				<MusicCard src="https://monika.jkloli.net/music/god_knows_archive.mp3" cover="https://monika.jkloli.net/image_bed/d033e22ae3-1772176375815-2b8929ef-99d9-43a1-a268-16ad7b07adf4.jpg" class="music-card card" />
 			</div>
 		</ScaleContainer>
 	</div>
@@ -70,7 +73,7 @@ import violet from "../assets/custom/violet.webp";
 	/* flex-direction: column; */
 	/* align-items: center; */
 	/* gap: 12px; */
-	opacity: 0.5;
+	/* opacity: 0.5; */
 }
 
 .link-tg {
@@ -126,6 +129,10 @@ import violet from "../assets/custom/violet.webp";
       transform: scale(1.1);
     }
   }
+}
+.music-card {
+	top: 687px;
+	left: 23px;
 }
 .blog-circle {
 	border: 19px solid #ffe500;
