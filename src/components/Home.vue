@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { LinkCard } from "./cards";
+import { CountdownCard, LinkCard, SkillCard } from "./cards";
 import ScaleContainer from "./ScaleContainer.vue";
 import ImageCard from "./cards/ImageCard.vue";
 import MusicCard from "./cards/MusicCard.vue";
@@ -33,7 +33,20 @@ import violet from "../assets/custom/violet.webp";
 					<img :src="blog" alt="blog" />
 					<div class="blog-circle"></div>
 				</a>
-				<MusicCard src="https://monika.jkloli.net/music/god_knows_archive.mp3" cover="https://monika.jkloli.net/image_bed/d033e22ae3-1772176375815-2b8929ef-99d9-43a1-a268-16ad7b07adf4.jpg" class="music-card card" />
+				<MusicCard
+					src="https://monika.jkloli.net/music/god_knows_archive.mp3"
+					cover="https://monika.jkloli.net/image_bed/d033e22ae3-1772278451548-502dabe0-dca3-44c4-bcd3-32dc7a0623f1.jpg"
+					title="God knows..."
+					artist="涼宮ハルヒ (平野 綾)"
+					class="music-card card"
+					play-color="#1E1E1E"
+				/>
+				<!-- <CountdownCard
+					subtitle="距离 2027 新年"
+					target-date="2026-03-01T00:00:00+08:00"
+					class="countdown-card card"
+				/>
+				<SkillCard class="skill-card card" /> -->
 			</div>
 		</ScaleContainer>
 	</div>
@@ -48,11 +61,6 @@ import violet from "../assets/custom/violet.webp";
 	justify-content: center;
 	/* height: 100vh; */
 	background-color: #f0f0f0;
-}
-
-.home-container {
-	/* background: blue; */
-	/* max-width: 1512px; */
 }
 
 /* 设计对比用背景图 */
@@ -133,6 +141,18 @@ import violet from "../assets/custom/violet.webp";
 .music-card {
 	top: 687px;
 	left: 23px;
+}
+.countdown-card.card {
+	width: 382px;
+	height: 133px;
+	top: 486px;
+	left: 1099px;
+}
+.skill-card.card {
+	width: 382px;
+	height: 133px;
+	top: 636px;
+	left: 1099px;
 }
 .blog-circle {
 	border: 19px solid #ffe500;
